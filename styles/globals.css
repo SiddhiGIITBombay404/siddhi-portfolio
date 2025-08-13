@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light dark; }
+
+:where(a, button, input, textarea, select):focus-visible {
+  @apply outline-none ring-2 ring-paw ring-offset-2 ring-offset-cream dark:ring-offset-midnight;
+}
+
+html, body { @apply scroll-smooth bg-cream text-midnight dark:bg-midnight dark:text-cream; }
+
+.prose a { @apply underline decoration-paw decoration-2 underline-offset-4 hover:opacity-90; }
+
+@keyframes wiggle { 0%,100%{transform:rotate(0)} 25%{transform:rotate(6deg)} 75%{transform:rotate(-6deg)} }
+.btn-wiggle:hover { animation: wiggle .4s ease-in-out; }
