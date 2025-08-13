@@ -1,4 +1,4 @@
-import './globals.css';
+import '@/styles/globals.css';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import { siteConfig } from '@/lib/siteConfig';
 import Header from '@/components/Header';
