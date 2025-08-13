@@ -22,8 +22,11 @@ export default function AboutPage() {
       </div>
 
       <div className="mt-8">
-        <Link href="/Siddhi_Gaikwad_Resume.pdf" className="underline">Download Resume (PDF)</Link>
+        <a href="/Siddhi_Gaikwad_Resume.pdf" className="underline" target="_blank" rel="noopener">
+          Download Resume (PDF)
+        </a>
       </div>
+      
     </Section>
   );
 }
